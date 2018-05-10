@@ -1,10 +1,10 @@
 {
-  "name": "portfolio",
+  "name": "node-webapp-typescript-starter-kit",
   "version": "1.0.0",
-  "description": "Josh Poole's portfolio",
-  "main": "index.js",
+  "description": "An opinionated starter kit for node web apps using Typescript",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "npm-run-all --parallel dev:*",
+    "dev": "npm-run-all -l -n --parallel dev:*",
     "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
     "dev:watch-server": "npm run build-server -- --watch",
     "predev:watch-client": "npm run clean",
