@@ -6,6 +6,4 @@ const client = <App />;
 
 const root = document.getElementById('root');
 
-if (root) {
-  ReactDOM.hydrate(client, root);
-}
+ReactDOM.hydrate(client, root);
