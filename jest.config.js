@@ -1,26 +1,24 @@
 module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   collectCoverageFrom: ['**/*.{ts,tsx}'],
-  mapCoverage: true,
   transform: {
     '^.+\\.(j|t)sx?$': '<rootDir>/node_modules/ts-jest/preprocessor.js',
   },
+  transformIgnorePatterns: ['<rootDir>/node_modules/(?!lodash-es)'],
   testMatch: ['**/__tests__/*.(ts|tsx)'],
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/test/',
-    '/src/client/styles/',
     '/src/typings.d.ts',
     '/src/global.d.ts',
     '/src/types.d.ts',
-    '/src/index.ts',
   ],
   coverageThreshold: {
     global: {
-      branches: 90,
-      functions: 85,
-      lines: 95,
-      statements: 95,
+      branches: 40,
+      functions: 40,
+      lines: 40,
+      statements: 40,
     },
   },
   setupFiles: ['./test/setup.js'],
