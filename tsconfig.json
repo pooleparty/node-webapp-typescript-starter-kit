@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-      "allowJs": true,
-      "target": "es5",
-      "lib": ["es6", "dom"],
-      "strict": true,
-      "jsx": "react"
+    "allowJs": true,
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "strict": true,
+    "jsx": "react",
   },
   "include": [
       "./src/**/*"
