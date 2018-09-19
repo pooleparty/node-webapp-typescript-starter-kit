@@ -6,6 +6,7 @@ module.exports = {
   },
   transformIgnorePatterns: ['<rootDir>/node_modules/(?!lodash-es)'],
   testMatch: ['**/__tests__/*.(ts|tsx)'],
+  testURL: 'http://localhost',
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/test/',
