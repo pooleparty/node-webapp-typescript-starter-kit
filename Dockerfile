@@ -1,4 +1,4 @@
-FROM node:8.11.3
+FROM node:10
 
 # reset npm loglevel (https://github.com/nodejs/docker-node/issues/57)
 ENV NPM_CONFIG_LOGLEVEL warn
@@ -10,7 +10,7 @@ EXPOSE $PORT
 WORKDIR /opt/code
 
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci
 COPY . .
 RUN npm run build
 
